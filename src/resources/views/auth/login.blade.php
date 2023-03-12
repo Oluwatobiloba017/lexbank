@@ -36,6 +36,7 @@
 							<div class="login-right">
 								<div class="login-header">
 									<h3>LexBank <span>Login </span></h3>
+                                    <p class="text-muted">Access account</p>
 								</div>
 								<form method="POST" action="{{ route('login') }}">
                                     @csrf
