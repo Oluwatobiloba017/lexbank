@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Transaction;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $transaction = Transaction::where('user_id', auth()->user()->id)->orderBy('created_at', 'DESC')->limit(10)->get();
+        return view('home', ['transactions' => $transaction]);
     }
 }

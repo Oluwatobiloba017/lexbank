@@ -10,7 +10,7 @@
                         <i class="fe fe-users"></i>
                     </span>
                     <div class="dash-count">
-                        <h3>168</h3>
+                        <h3>&#163;{{ auth()->user()->balance }}</h3>
                     </div>
                 </div>
                 <div class="dash-widget-info">
@@ -30,7 +30,7 @@
                         <i class="fe fe-credit-card"></i>
                     </span>
                     <div class="dash-count">
-                        <h3>487</h3>
+                        <h3>&#163;{{$transactions->where('type', 'transfer')->sum('amount')}}</h3>
                     </div>
                 </div>
                 <div class="dash-widget-info">
@@ -51,7 +51,7 @@
                         <i class="fe fe-star-o"></i>
                     </span>
                     <div class="dash-count">
-                        <h3>485</h3>
+                        <h3>&#163;{{$transactions->where('type', 'withdrawal')->sum('amount')}}</h3>
                     </div>
                 </div>
                 <div class="dash-widget-info">
@@ -72,7 +72,7 @@
                         <i class="fe fe-folder"></i>
                     </span>
                     <div class="dash-count">
-                        <h3>$62523</h3>
+                        <h3>&#163;{{$transactions->where('type', 'deposit')->sum('amount')}}</h3>
                     </div>
                 </div>
                 <div class="dash-widget-info">
@@ -101,26 +101,32 @@
                     <table class="table table-hover table-center mb-0">
                         <thead>
                             <tr>
-                                <th>Sender ID</th>
+                                <th>Recipient ID</th>
+                                <th>Recipient Name</th>
                                 <th>Amount</th>
                                 <th>Trasaction Type</th>
                                 <th>Date</th>
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($transactions as $tx)
                             <tr>
                                 <td>
-                                    19829839
-                                </td>
-                                <td>$2000</td>
-                                <td>
-                                    Withdrawal
+                                    {{$tx->recipient->account_number}}
                                 </td>
                                 <td>
-                                    9 Nov 2019 <span class="text-primary d-block">11.00 AM - 11.15 AM</span>
+                                    {{$tx->recipient->first_name}}  {{$tx->recipient->last_name}}
+                                </td>
+                                <td>&#163;{{$tx->amount}}</td>
+                                <td>
+                                    {{$tx->type}}
+                                </td>
+                                <td>
+                                    {{$tx->created_at}} 
+                                    {{-- <span class="text-primary d-block">11.00 AM - 11.15 AM</span> --}}
                                 </td>
                             </tr>
-                            
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

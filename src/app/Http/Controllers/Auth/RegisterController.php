@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Transaction;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -65,12 +66,15 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'],
             'email' => $data['email'],
+            'account_number' => random_int(100000, 999999),
             'balance' => '2000',
             'password' => Hash::make($data['password']),
         ]);
+        Transaction::create(['user_id' => $user->id, 'recipient_id' => $user->id, 'amount' => '2000', 'type' => 'deposit', 'description' => 'Account opening balance']);
+        return $user;
     }
 }

@@ -46,13 +46,13 @@
 					<i class="fe fe-text-align-left"></i>
 				</a>
 				
-				<div class="top-nav-search">
+				{{-- <div class="top-nav-search">
 					<form>
 						<input type="text" class="form-control" placeholder="Search here">
 						<button class="btn" type="submit"><i class="fa fa-search"></i></button>
 					</form>
 				</div>
-				
+				 --}}
 				<!-- Mobile Menu Toggle -->
 				<a class="mobile_btn" id="mobile_btn">
 					<i class="fa fa-bars"></i>
@@ -137,9 +137,9 @@
 					<div class="page-header">
 						<div class="row">
 							<div class="col-sm-12">
-								<h3 class="page-title">Welcome {{auth()->user()->first_name}} {{auth()->user()->last_name}}</h3>
+								<h3 class="page-title">{{auth()->user()->first_name}} {{auth()->user()->last_name}}</h3> 
 								<ul class="breadcrumb">
-									<li class="breadcrumb-item active">Dashboard</li>
+									Account Number:  <li class="breadcrumb-item active">{{auth()->user()->account_number}}</li>
 								</ul>
 							</div>
 						</div>
