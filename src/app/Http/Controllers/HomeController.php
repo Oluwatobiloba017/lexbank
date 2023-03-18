@@ -27,4 +27,20 @@ class HomeController extends Controller
         $transaction = Transaction::where('user_id', auth()->user()->id)->orderBy('created_at', 'DESC')->limit(10)->get();
         return view('home', ['transactions' => $transaction]);
     }
+
+    public function transfer(){
+
+    }
+
+    public function deposit(){
+        
+    }
+
+    public function withdraw(){
+        
+    }
+
+    public function viewAccount(){
+        
+    }
 }

@@ -103,23 +103,20 @@
                 <div class="sidebar-inner slimscroll">
 					<div id="sidebar-menu" class="sidebar-menu">
 						<ul>
-							{{-- <li class="menu-title"> 
-								<span><i class="fe fe-home"></i> Main</span>
-							</li> --}}
 							<li class="active"> 
 								<a href="{{url('home')}}"><span>Dashboard</span></a>
 							</li>
 							<li> 
-								<a href="{{url('home')}}"><span>Transfer</span></a>
+								<a href="{{url('transfer')}}"><span>Transfer</span></a>
 							</li>
 							<li> 
-								<a href="{{url('home')}}"><span>Deposit</span></a>
+								<a href="{{url('deposit')}}"><span>Deposit</span></a>
 							</li>
 							<li> 
-								<a href="{{url('home')}}"><span>Withdrawal</span></a>
+								<a href="{{url('withdraw')}}"><span>Withdrawal</span></a>
 							</li>
 							<li> 
-								<a href="{{url('home')}}"><span>View Account</span></a>
+								<a href="{{url('view')}}"><span>View Account</span></a>
 							</li>
 						
 						</ul>
