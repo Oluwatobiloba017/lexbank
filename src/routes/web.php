@@ -19,6 +19,9 @@ Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('transfer', [\App\Http\Controllers\HomeController::class, 'transfer']);
+Route::post('transfer', [\App\Http\Controllers\HomeController::class, 'transferFund']);
 Route::get('deposit', [\App\Http\Controllers\HomeController::class, 'deposit']);
+Route::post('deposit', [\App\Http\Controllers\HomeController::class, 'depositFund']);
 Route::get('withdraw', [\App\Http\Controllers\HomeController::class, 'withdraw']);
+Route::post('withdraw', [\App\Http\Controllers\HomeController::class, 'withdrawFund']);
 Route::get('view', [\App\Http\Controllers\HomeController::class, 'viewTransfer']);
