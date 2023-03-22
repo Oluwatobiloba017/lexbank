@@ -10,7 +10,7 @@
                         <i class="fe fe-users"></i>
                     </span>
                     <div class="dash-count">
-                        <h3>&#163;{{ auth()->user()->balance }}</h3>
+                        <h3>&#163;{{ number_format(auth()->user()->balance) }}</h3>
                     </div>
                 </div>
                 <div class="dash-widget-info">
@@ -30,7 +30,7 @@
                         <i class="fe fe-credit-card"></i>
                     </span>
                     <div class="dash-count">
-                        <h3>&#163;{{$transactions->where('type', 'transfer')->sum('amount')}}</h3>
+                        <h3>&#163;{{number_format($transactions->where('type', 'transfer')->sum('amount'))}}</h3>
                     </div>
                 </div>
                 <div class="dash-widget-info">
@@ -51,7 +51,7 @@
                         <i class="fe fe-star-o"></i>
                     </span>
                     <div class="dash-count">
-                        <h3>&#163;{{$transactions->where('type', 'withdrawal')->sum('amount')}}</h3>
+                        <h3>&#163;{{number_format($transactions->where('type', 'withdraw')->sum('amount'))}}</h3>
                     </div>
                 </div>
                 <div class="dash-widget-info">
@@ -72,7 +72,7 @@
                         <i class="fe fe-folder"></i>
                     </span>
                     <div class="dash-count">
-                        <h3>&#163;{{$transactions->where('type', 'deposit')->sum('amount')}}</h3>
+                        <h3>&#163;{{number_format($transactions->where('type', 'deposit')->sum('amount'))}}</h3>
                     </div>
                 </div>
                 <div class="dash-widget-info">
@@ -117,7 +117,7 @@
                                 <td>
                                     {{$tx->recipient->first_name}}  {{$tx->recipient->last_name}}
                                 </td>
-                                <td>&#163;{{$tx->amount}}</td>
+                                <td>&#163;{{number_format($tx->amount)}}</td>
                                 <td>
                                     {{$tx->type}}
                                 </td>
