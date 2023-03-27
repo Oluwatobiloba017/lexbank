@@ -115,9 +115,7 @@
 							<li> 
 								<a href="{{url('withdraw')}}"><span>Withdrawal</span></a>
 							</li>
-							<li> 
-								<a href="{{url('view')}}"><span>View Account</span></a>
-							</li>
+							
 						
 						</ul>
 					</div>
@@ -136,7 +134,7 @@
 							<div class="col-sm-12">
 								<h3 class="page-title">{{auth()->user()->first_name}} {{auth()->user()->last_name}}</h3> 
 								<ul class="breadcrumb">
-									Account Number:  <li class="breadcrumb-item active">{{auth()->user()->account_number}}</li>
+									Account Number:  <li class="breadcrumb-item active">{{auth()->user()->account_number}} | Current Account</li>
 								</ul>
 							</div>
 						</div>
