@@ -6,16 +6,16 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    @if (session('success'))
+                  @if (session('success'))
                     <div class="alert alert-success" role="alert">
                         {{ session('success') }}
                     </div>
                   @endif
                   @if (session('error'))
-                  <div class="alert alert-danger" role="alert">
-                      {{ session('error') }}
-                  </div>
-                @endif
+                    <div class="alert alert-danger" role="alert">
+                        {{ session('error') }}
+                    </div>
+                  @endif
                     <div class="card">
                         <div class="card-header">
                             <h4 class="card-title">Deposit  -  {{ number_format(auth()->user()->balance) }}</h4>

@@ -115,7 +115,6 @@
             </div>
         </div>
         <!-- /Recent Orders -->
-        
     </div>
 </div>
 @endsection

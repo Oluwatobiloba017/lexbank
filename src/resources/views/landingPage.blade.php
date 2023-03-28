@@ -1,7 +1,5 @@
 @extends('layouts.master')
-
 @section('content')
-
 <section class="section section-search">
     <div class="container">
         <div class="banner-wrapper m-auto text-center aos" data-aos="fade-up">
@@ -23,13 +21,10 @@
                 </form>
             </div>
             <!-- /Search -->
-            
         </div>
     </div>
 </section>
 <!-- /Home Banner -->
-
-
 <!-- Blog Section -->
 <section class="section section-blogs">
     <div class="container">
@@ -110,10 +105,8 @@
                     </div>
                 </div>
                 <!-- /Blog Post -->
-                
             </div>
             <div class="col-md-6 col-lg-3 col-sm-12">
-            
                 <!-- Blog Post -->
                 <div class="blog grid-blog aos" data-aos="fade-up">
                     <div class="blog-image">
@@ -169,5 +162,4 @@
     </div>
 </section>
 <!-- /Statistics Section -->	
-
 @endsection
