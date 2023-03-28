@@ -15,9 +15,7 @@
                 </div>
                 <div class="dash-widget-info">
                     <h6 class="text-muted">Balance</h6>
-                    {{-- <div class="progress progress-sm">
-                        <div class="progress-bar bg-primary w-50"></div>
-                    </div> --}}
+                    
                 </div>
             </div>
         </div>
@@ -36,9 +34,7 @@
                 <div class="dash-widget-info">
                     
                     <h6 class="text-muted">Total Transfer</h6>
-                    {{-- <div class="progress progress-sm">
-                        <div class="progress-bar bg-success w-50"></div>
-                    </div> --}}
+                    
                 </div>
             </div>
         </div>
@@ -57,9 +53,7 @@
                 <div class="dash-widget-info">
                     
                     <h6 class="text-muted">Total Withdrawal</h6>
-                    {{-- <div class="progress progress-sm">
-                        <div class="progress-bar bg-danger w-50"></div>
-                    </div> --}}
+                    
                 </div>
             </div>
         </div>
@@ -78,9 +72,7 @@
                 <div class="dash-widget-info">
                     
                     <h6 class="text-muted">Total Deposit</h6>
-                    {{-- <div class="progress progress-sm">
-                        <div class="progress-bar bg-warning w-50"></div>
-                    </div> --}}
+                    
                 </div>
             </div>
         </div>
@@ -123,7 +115,7 @@
                                 </td>
                                 <td>
                                     {{$tx->created_at}} 
-                                    {{-- <span class="text-primary d-block">11.00 AM - 11.15 AM</span> --}}
+                                    
                                 </td>
                             </tr>
                             @endforeach

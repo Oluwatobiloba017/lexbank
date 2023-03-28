@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>Mentoring - Dashboard</title>
+        <title>LexBank Dashboard</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -66,12 +66,11 @@
 					<li class="nav-item dropdown has-arrow">
 						<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
                             {{ auth()->user()->first_name}} {{ auth()->user()->last_name}}
-							{{-- <span class="user-img"><img class="rounded-circle" src="assets/img/profiles/avatar-12.jpg" width="31" alt="Ryan Taylor"></span> --}}
 						</a>
 						<div class="dropdown-menu">
 							<div class="user-header">
 								<div class="avatar avatar-sm">
-									{{-- <img src="assets/img/profiles/avatar-12.jpg" alt="User Image" class="avatar-img rounded-circle"> --}}
+							
 								</div>
 								<div class="user-text">
 									<h6> {{ auth()->user()->first_name}} {{ auth()->user()->last_name}}</h6>
@@ -87,7 +86,7 @@
                          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                              @csrf
                          </form>
-							{{-- <a class="dropdown-item" href="login.html">Logout</a> --}}
+						
 						</div>
 					</li>
 					<!-- /User Menu -->

@@ -1,23 +1,8 @@
 @extends('layouts.admin')
 @section('content')
 	<!-- Page Wrapper -->
-   
-			
+		
         <div class="content container-fluid">
-
-            {{-- <!-- Page Header -->
-            <div class="page-header">
-                <div class="row">
-                    <div class="col">
-                        <h3 class="page-title">Vertical Form</h3>
-                        <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{url('home')}}">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Transfer</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- /Page Header --> --}}
 
             <div class="row">
                 <div class="col-md-2"></div>

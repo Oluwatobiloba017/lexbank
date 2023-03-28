@@ -78,7 +78,7 @@ class HomeController extends Controller
 
     public function withdrawFund(Request $request){
         $user = User::where('id', auth()->user()->id)->first();
-        if($request->amount > $user->balance){
+        if($request->amount >= $user->balance){
             return back()->with('error', 'Insurficient balance');
         }
         $user->balance -= $request->amount;
