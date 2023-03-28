@@ -19,7 +19,6 @@
 						<div class="menu-header">
 							<a href="{{ url('/') }}" class="menu-logo">
 								<span style="color:rgb(78, 78, 221)">Lex</span>Bank
-								{{-- <img src="assets/img/logo.png" class="img-fluid" alt="Logo"> --}}
 							</a>
 							<a id="menu_close" class="menu-close" href="javascript:void(0);">
 								<i class="fas fa-times"></i>

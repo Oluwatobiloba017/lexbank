@@ -124,9 +124,7 @@
 			
 			<!-- Page Wrapper -->
             <div class="page-wrapper">
-			
                 <div class="content container-fluid">
-					
 					<!-- Page Header -->
 					<div class="page-header">
 						<div class="row">
@@ -142,8 +140,6 @@
 
                     @yield('content')
 
-					
-					
 				</div>			
 			</div>
 			<!-- /Page Wrapper -->

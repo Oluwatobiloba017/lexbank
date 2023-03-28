@@ -86,8 +86,4 @@ class HomeController extends Controller
         Transaction::create(['user_id' => $user->id, 'recipient_id' => $user->id, 'amount' => $request->amount, 'type' => 'withdraw', 'description' => 'Fund withdrawal']);
         return back()->with('success', 'Withdrawal Successful');
     }
-
-    public function viewAccount(){
-        
-    }
 }

@@ -64,9 +64,7 @@
                     </div>
                 </div>
                 <div class="dash-widget-info">
-                    
                     <h6 class="text-muted">Total Deposit</h6>
-                    
                 </div>
             </div>
         </div>
