@@ -23,10 +23,12 @@
                         <div class="card-body">
                             <form action="{{ url('deposit') }}" method="POST">
                                 @csrf
+
                                 <div class="form-group">
                                     <label>Enter Amount</label>
                                     <input type="text" name="amount" class="form-control" required>
                                 </div>
+                                
                                 <div class="text-end">
                                     <button type="submit" class="btn btn-primary">Deposit</button>
                                 </div>

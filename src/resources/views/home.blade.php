@@ -1,6 +1,5 @@
 @extends('layouts.admin')
 @section('content')
-
 <div class="row">
     <div class="col-xl-3 col-sm-6 col-12">
         <div class="card">
@@ -15,7 +14,6 @@
                 </div>
                 <div class="dash-widget-info">
                     <h6 class="text-muted">Balance</h6>
-                    
                 </div>
             </div>
         </div>
@@ -32,9 +30,7 @@
                     </div>
                 </div>
                 <div class="dash-widget-info">
-                    
                     <h6 class="text-muted">Total Transfer</h6>
-                    
                 </div>
             </div>
         </div>
@@ -51,9 +47,7 @@
                     </div>
                 </div>
                 <div class="dash-widget-info">
-                    
                     <h6 class="text-muted">Total Withdrawal</h6>
-                    
                 </div>
             </div>
         </div>
@@ -79,10 +73,8 @@
     </div>
 </div>
 
-
 <div class="row">
     <div class="col-md-12">
-    
         <!-- Recent Orders -->
         <div class="card card-table">
             <div class="card-header">
