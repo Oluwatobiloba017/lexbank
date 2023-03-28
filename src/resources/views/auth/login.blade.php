@@ -15,17 +15,12 @@
 		<!-- Fontawesome CSS -->
 		<link rel="stylesheet" href="{{asset('asset/plugins/fontawesome/css/fontawesome.min.css')}}">
 		<link rel="stylesheet" href="{{asset('asset/plugins/fontawesome/css/all.min.css')}}">
-		
 		<!-- Main CSS -->
 		<link rel="stylesheet" href="{{asset('asset/css/style.css')}}">
-		
 	</head>
 	<body class="account-page">
-
 		<!-- Main Wrapper -->
 		<div class="main-wrapper">
-			
-			
 			<!-- Page Content -->
 			<div class="bg-pattern-style">
 				<div class="content">
@@ -43,7 +38,6 @@
 									<div class="form-group">
 										<label class="form-control-label">Email Address</label>
 										<input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
                                         @error('email')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -57,9 +51,7 @@
                                             <input id="password" type="password" class="form-control pass-input @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
 											<span class="fas fa-eye toggle-password"></span>
-										</div>
-
-                                        
+										</div>         
                                         @error('password')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -76,15 +68,11 @@
 						</div>
 					</div>
 					<!-- /Login Tab Content -->
-
 				</div>
-
 			</div>		
 			<!-- /Page Content -->
-		   
 		</div>
 		<!-- /Main Wrapper -->
-	  
 		<!-- jQuery -->
 		<script src="{{asset('asset/js/jquery-3.6.0.min.js')}}"></script>
 		
