@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>LexBank</title>
+		<title>LexBank Registration Page</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -43,7 +43,6 @@
                                                         <strong>{{ $message }}</strong>
                                                     </span>
                                                 @enderror
-												{{-- <input id="first-name" type="text" class="form-control" name="first_name" autofocus=""> --}}
 											</div>
 										</div>
 										<div class="col-lg-6">
